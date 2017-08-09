@@ -1,0 +1,35 @@
+doctype html
+html
+   head
+      title URL Shortener Microservice | FreeCodeCamp | Farahmand Moslemi
+      //link(rel='shortcut icon', href='https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico', type='image/x-icon')
+      link(rel='shortcut icon', href='https://farahmandm.github.io/favicon.ico', type='image/x-icon')
+      link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto')
+      link(rel='stylesheet', href='/public/style.css')
+
+   body
+      div(class="container")
+        h1 URL Shortener Microservice | Farahmand Moslemi
+        h2 Part 2 of Free Code Camp Backend Challenges
+        p
+          strong User stories:
+          ol
+            li I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.
+            li If I pass an invalid URL that doesn't follow the valid http://www.example.com format, the JSON response will contain an error instead.
+            li When I visit that shortened URL, it will redirect me to my original link.
+        p
+          strong Example usage:
+          code #{base}/https://google.com
+          code #{base}/http://example.com:80?q1=hello&q2=test
+          code #{base}/Hello
+        p
+          strong Example output:
+          br
+          code {"original_url":"http://example.com:80/?q1=hello&q2=test","short_url":"#{base}/6"}
+          code {"error":"Invalid Url! Make sure you enter a valid Url."}
+        p
+          strong Example redirection usage:
+          code #{base}/6
+        p Redirects to:
+          br
+          code #{base}/http://example.com:80/?q1=hello&q2=test

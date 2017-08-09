@@ -1,0 +1,17 @@
+{
+  "name": "farahmand-url-shortener-microservice",
+  "version": "1.0.0",
+  "description": "URL Shortener Microservice | Farahmand Moslemi | Part 3 of Free Code Camp Backend Challenges",
+  "dependencies": {
+    "express": "^4.14.0",
+    "mongodb": "^2.2.30",
+    "pug": "^2.0.0-rc.3"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=4.4.5"
+  }
+}
